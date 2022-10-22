@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <title>Tajam</title>
+</head>
+
+<body>
+
+    <!-- Sprite -->
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g>
+                <path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="twitter" viewBox="0 0 128 128">
+            <g>
+                <path d="M128,23.294    c-4.703,2.142-9.767,3.59-15.079,4.237c5.424-3.328,9.587-8.606,11.548-14.892c-5.079,3.082-10.691,5.324-16.687,6.526    c-4.778-5.231-11.608-8.498-19.166-8.498c-14.493,0-26.251,12.057-26.251,26.927c0,2.111,0.225,4.16,0.676,6.133    C41.217,42.601,21.871,31.892,8.91,15.582c-2.261,3.991-3.554,8.621-3.554,13.552c0,9.338,4.636,17.581,11.683,22.412    c-4.297-0.131-8.355-1.356-11.901-3.359v0.331c0,13.051,9.053,23.937,21.074,26.403c-2.201,0.632-4.523,0.948-6.92,0.948    c-1.69,0-3.343-0.162-4.944-0.478c3.343,10.694,13.035,18.483,24.53,18.691c-8.986,7.227-20.315,11.533-32.614,11.533    c-2.119,0-4.215-0.123-6.266-0.37c11.623,7.627,25.432,12.088,40.255,12.088c48.309,0,74.717-41.026,74.717-76.612    c0-1.171-0.023-2.342-0.068-3.49C120.036,33.433,124.491,28.695,128,23.294"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="dribble" viewBox="0 0 19 19">
+            <g><path d="M13.9195 16.3383C13.8415 15.8753 13.4315 13.6183 12.4235 10.8493C14.9045 10.4523 17.0545 11.1333 17.2135 11.1853C17.0462 12.2239 16.6676 13.2171 16.101 14.1034C15.5344 14.9898 14.7919 15.7504 13.9195 16.3383ZM9.62454 17.6513C7.83652 17.6539 6.104 17.0305 4.72754 15.8893C4.82954 15.9713 4.90054 16.0233 4.90054 16.0233C4.90054 16.0233 6.37354 12.8103 10.9325 11.2223C10.9485 11.2153 10.9665 11.2123 10.9835 11.2063C12.0655 14.0163 12.5115 16.3693 12.6255 17.0413C11.6767 17.4443 10.6564 17.6518 9.62554 17.6513H9.62454ZM1.93854 9.9643C1.93854 9.8823 1.94254 9.8023 1.94454 9.7213C2.08054 9.7243 5.87854 9.8113 9.83554 8.6263C10.0555 9.0563 10.2655 9.4963 10.4595 9.9333C10.3576 9.96075 10.2565 9.99143 10.1565 10.0253C6.00854 11.3653 3.90454 15.0963 3.90454 15.0963L3.90754 15.1003C2.63727 13.6915 1.93525 11.8612 1.93754 9.9643H1.93854ZM6.34454 3.0143C7.38031 4.43434 8.33355 5.91278 9.19954 7.4423C5.50954 8.4223 2.30554 8.3843 2.10354 8.3803C2.3484 7.21925 2.85869 6.13064 3.59445 5.1997C4.33021 4.26877 5.27148 3.52078 6.34454 3.0143ZM7.78354 2.5013L7.78254 2.5043L7.75854 2.5083L7.78354 2.5023V2.5013ZM14.7005 4.1973C14.6815 4.2263 13.5875 5.8923 10.6855 6.9793C9.8317 5.42104 8.87247 3.92289 7.81454 2.4953C9.01478 2.20197 10.2682 2.20357 11.4677 2.49996C12.6671 2.79635 13.7771 3.37871 14.7025 4.1973H14.7005ZM17.3085 9.8873C17.1985 9.8633 14.5965 9.3033 11.9555 9.6353L11.7895 9.2403C11.6291 8.86384 11.4587 8.49171 11.2785 8.1243C14.3135 6.8843 15.5455 5.1043 15.5605 5.0833C16.6764 6.43706 17.2935 8.13299 17.3085 9.8873ZM18.4425 8.1533C18.3231 7.57342 18.1469 7.00669 17.9165 6.4613C17.237 4.85358 16.1042 3.47835 14.6565 2.5033C14.1753 2.17746 13.6636 1.89916 13.1285 1.6723C12.0195 1.20458 10.8281 0.963623 9.62454 0.963623C8.42095 0.963623 7.22954 1.20458 6.12054 1.6723C4.5137 2.35332 3.13884 3.48573 2.16254 4.9323C1.15748 6.41774 0.621673 8.17079 0.624539 9.9643C0.621537 11.1678 0.862381 12.3594 1.33254 13.4673C1.55854 14.0033 1.83654 14.5163 2.16254 14.9973C3.13873 16.4437 4.51365 17.5758 6.12054 18.2563C6.66525 18.4871 7.23176 18.6627 7.81154 18.7803C9.59562 19.1497 11.4499 18.967 13.1275 18.2563C13.6629 18.0298 14.175 17.7519 14.6565 17.4263C15.1345 17.1033 15.5805 16.7363 15.9885 16.3293C17.0432 15.2767 17.8195 13.9783 18.2477 12.5511C18.6759 11.1239 18.7425 9.61264 18.4415 8.1533H18.4425Z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="instagram" viewBox="0 0 438.536 438.536">
+            <g><path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
+                C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563
+                h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243
+                C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982
+                c24.36,0,45.153,8.33,62.381,24.982c17.228,16.655,25.837,36.785,25.837,60.386c0,23.598-8.609,43.729-25.837,60.379
+                c-17.228,16.659-38.014,24.988-62.381,24.988c-24.172,0-44.87-8.336-62.097-24.988c-17.228-16.652-25.841-36.781-25.841-60.379
+                C131.621,194.81,140.234,174.681,157.462,158.025z M388.865,370.589c0,4.945-1.718,9.083-5.141,12.416
+                c-3.433,3.33-7.519,4.996-12.282,4.996h-305.2c-4.948,0-9.091-1.666-12.419-4.996c-3.333-3.326-4.998-7.471-4.998-12.416V185.575
+                H89.08c-3.805,11.993-5.708,24.462-5.708,37.402c0,36.553,13.322,67.715,39.969,93.511c26.65,25.786,58.721,38.685,96.217,38.685
+                c24.744,0,47.583-5.903,68.527-17.703c20.937-11.807,37.486-27.839,49.676-48.112c12.183-20.272,18.274-42.4,18.274-66.38
+                c0-12.94-1.91-25.406-5.715-37.402h38.547v185.014H388.865z M388.865,115.626c0,5.52-1.903,10.184-5.716,13.99
+                c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522
+                c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854
+                c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="google" viewBox="0 0 32 32">
+            <g><path d="M 12.96875 4 C 6.58075 4 5.5625 8.4545 5.5625 9.9375 C 5.5625 12.1455 7.277 14.90625 10.75 14.90625 C 11.066 14.90625 11.42425 14.88475 11.78125 14.84375 C 11.72225 15.00875 11.46875 15.5535 11.46875 16.0625 C 11.46875 17.1225 12.14 17.80575 12.375 18.21875 C 8.575 18.18175 4 19.833 4 23.5 C 4 24.842 5.1485 28 10.5625 28 C 16.7375 28 18.625 24.1995 18.625 22.0625 C 18.625 17.9805 14.3125 17.29125 14.3125 15.40625 C 14.3125 13.42825 17.53125 13.26725 17.53125 9.40625 C 17.53125 6.60925 15.572 5.248 15.375 5.125 L 17.3125 5.125 L 19.25 4 L 12.96875 4 z M 11.03125 5.03125 C 14.10925 5.03125 14.875 9.60175 14.875 10.84375 C 14.875 11.13075 15.06975 14.03125 12.21875 14.03125 C 10.05675 14.03125 8.21875 11.31225 8.21875 8.40625 C 8.21875 7.54325 8.64225 5.03125 11.03125 5.03125 z M 24 11 L 24 14 L 21 14 L 21 16 L 24 16 L 24 19 L 26 19 L 26 16 L 29 16 L 29 14 L 26 14 L 26 11 L 24 11 z M 12.53125 19.09375 C 12.80125 19.09375 13.01875 19.104 13.21875 19.125 C 14.31075 19.941 16.59375 21.10825 16.59375 23.28125 C 16.59275 24.26625 16.0045 26.6875 12.0625 26.6875 C 10.0835 26.6875 6.65625 25.84275 6.65625 22.84375 C 6.65625 21.80675 7.27625 19.09375 12.53125 19.09375 z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none;">
+        <symbol id="youtube" viewBox="0 0 128 128">
+            <g><path d="M126.72,38.224c0,0-1.252-8.883-5.088-12.794    c-4.868-5.136-10.324-5.16-12.824-5.458c-17.912-1.305-44.78-1.305-44.78-1.305h-0.056c0,0-26.868,0-44.78,1.305    c-2.504,0.298-7.956,0.322-12.828,5.458C2.528,29.342,1.28,38.224,1.28,38.224S0,48.658,0,59.087v9.781    c0,10.433,1.28,20.863,1.28,20.863s1.248,8.883,5.084,12.794c4.872,5.136,11.268,4.975,14.116,5.511    c10.24,0.991,43.52,1.297,43.52,1.297s26.896-0.04,44.808-1.345c2.5-0.302,7.956-0.326,12.824-5.462    c3.836-3.912,5.088-12.794,5.088-12.794S128,79.302,128,68.868v-9.781C128,48.658,126.72,38.224,126.72,38.224z M50.784,80.72    L50.78,44.501l34.584,18.172L50.784,80.72z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- Header -->
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="assets/images/logo.png" class="header__img">
+                    <div class="header__text">tajam</div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__item" data-scroll="#intro">Home</a>
+                    <a href="#" class="nav__item" data-scroll="#about">About</a>
+                    <a href="#" class="nav__item" data-scroll="#expertise">Expertise</a>
+                    <a href="#" class="nav__item" data-scroll="#team">Team</a>
+                    <a href="#" class="nav__item" data-scroll="#works">Works</a>
+                    <a href="#" class="nav__item" data-scroll="#testimonials">People say</a>
+                    <a href="#" class="nav__item" data-scroll="#contact">Contact</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle" >
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro -->
+
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__items" >
+                <div class="intro__slider" id="sliderIntro">
+                    <div class="intro__inner">
+                        <div class="intro__title">We Are Awesome Creative Agency</div>
+                        <div class="intro__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</div>
+                    
+                    </div>
+                    <div class="intro__inner">
+                        <div class="intro__title">We Are Awesome Creative Agency</div>
+                        <div class="intro__text">1</div>
+                    
+                    </div>
+                    <div class="intro__inner">
+                        <div class="intro__title">We Are Awesome Creative Agency</div>
+                        <div class="intro__text">2</div>
+                    
+                    </div>
+                    <div class="intro__inner">
+                        <div class="intro__title">We Are Awesome Creative Agency</div>
+                        <div class="intro__text">3</div>
+                    
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn btn--intro">Learn More</a> 
+        </div>
+        <div class="intro__dots">
+            <div class="container">
+                <div class="intro__slider__inner">
+                    <div class="intro__slider__item active"></div>
+                    <div class="intro__slider__item"></div>
+                    <div class="intro__slider__item"></div>
+                    <div class="intro__slider__item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    
+    <div class="about" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <img src="assets/images/aboutLogo.png"  class="about__img">
+                <div class="about__text">
+                    <div class="about__title">OUR STORY</div>
+                    <div class="about__subtext">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</div>
+                    <div class="about__subtext">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn btn--about">Learn More</a> 
+        </div>
+        <div class="about__video">
+            <div class="container">
+                <div  class="video__inner">
+                    <a href="#" class="video__btn">
+                        <div class="video__play active">
+                            <div class="line line_1"></div>
+                            <div class="line line_2"></div>
+                            <div class="line line_3"></div>
+                        </div>
+                    </a>
+                <div class="video__text">Watch our story</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expertise -->
+
+    <div class="expertise" id="expertise">
+        <div class="container">
+            <div class="expertise__head">
+                <div class="expertise__title">Expertise</div>
+                <div class="expertise__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
+            </div>
+            <div class="expertise__inner"> 
+                <div class="expertise__items">
+                    <div class="item__block">
+                        <div class="expertise__item">
+                            <img src="assets/images/Expertise/expertise_1.png" class="item__img">
+                            <div class="item__title">WEB DESIGN & DEVELOPMENT</div>
+                            <div class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                        </div>
+                    </div>
+                    <div class="item__block">
+                        <div class="expertise__item">
+                            <img src="assets/images/Expertise/expertise_2.png"  class="item__img">
+                            <div class="item__title">Branding identity</div>
+                            <div class="item__text">This is Photoshop's version  of     Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet    Aenean.</div>
+                        </div>
+                    </div>
+                    <div class="item__block">
+                        <div class="expertise__item">
+                            <img src="assets/images/Expertise/expertise_3.png" class="item__img">
+                            <div class="item__title">Mobile app</div>
+                            <div class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                        </div>
+                    </div>
+                    <div class="item__block">
+                        <div class="expertise__item">
+                            <img src="assets/images/Expertise/expertise_4.png" class="item__img">
+                            <div class="item__title">Search engine optimization</div>
+                            <div class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                        </div>
+                    </div>
+                    <div class="item__block">
+                        <div class="expertise__item">
+                            <img src="assets/images/Expertise/expertise_5.png" class="item__img">
+                            <div class="item__title">Game development</div>
+                            <div class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                        </div>
+                    </div>
+                    <div class="item__block">
+                        <div class="expertise__item">
+                            <img src="assets/images/Expertise/expertise_6.png" class="item__img">
+                            <div class="item__title">Made with love</div>
+                            <div class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <!-- Team -->
+
+    <div class="team" id="team">
+        <div class="container">
+            <div class="team__head">
+                <div class="team__title">Meet our amazing team</div>
+                <div class="team__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
+            </div>
+            <div class="team__items">
+                <div class="team__item">
+                    <img src="assets/images/Team/Team1.jpg" class="team__img">
+                    <div class="team__about">
+                        <div class="team__name">Semf ukuk</div>
+                        <div class="team__job">Ceo & Founder</div>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="assets/images/Team/Team2.jpg" class="team__img">
+                    <div class="team__about">
+                        <div class="team__name">Dik Adalin</div>
+                        <div class="team__job">Engineering</div>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="assets/images/Team/Team3.jpg" class="team__img">
+                    <div class="team__about">
+                        <div class="team__name">Jeng kol</div>
+                        <div class="team__job">Designer</div>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="assets/images/Team/Team4.jpg" class="team__img">
+                    <div class="team__about">
+                        <div class="team__name">Pet romak</div>
+                        <div class="team__job">Marketing</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team__end">
+                <div class="team__join">Become part of our dream team, let’s join us ! </div>
+                <a href="#" class="btn btn--team">We are hiring</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works -->
+
+    <div class="works" id="works">
+        <div class="container">
+            <div class="works__intro">
+                <div class="works__title">our works</div>
+                <a href="#" class="works__all">See All Projects in dribble 
+                    <div class="works__arrow"></div>
+                </a>
+            </div>
+        </div>
+        <div class="works__images">
+            <img src="assets/images/works/work1.jpg" class="works__item">
+            <img src="assets/images/works/work2.jpg" class="works__item">
+            <img src="assets/images/works/work3.jpg" class="works__item">
+            <img src="assets/images/works/work4.jpg" class="works__item">
+            <img src="assets/images/works/work5.jpg" class="works__item">
+            <img src="assets/images/works/work6.jpg" class="works__item">
+            <img src="assets/images/works/work7.jpg" class="works__item">
+            <img src="assets/images/works/work8.jpg" class="works__item">
+            <img src="assets/images/works/work9.jpg" class="works__item">
+            <img src="assets/images/works/work10.jpg" class="works__item">
+            <img src="assets/images/works/work11.jpg" class="works__item">
+            <img src="assets/images/works/work12.jpg" class="works__item">
+        </div>
+        <div class="works__load">
+            <a href="#" class="btn btn--works">LOAD MORE</a>
+        </div>
+    </div>
+
+<!-- Testimonials -->
+    <div class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials__items" >
+                <div class="slider__text" id="sliderText">
+                    
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">This is Photoshop's    version  of Lorem Ipsum. Proin gravida nibh vel velit  auctor aliquet. Aenean sollicitudin, lorem quisbibendum  auctor, nisi elit consequat ipsum, necsagittis sem nibh id  elit. Duis sed odio sit amet nibhvulputate cursus a sit     amet mauris. Morbi accumsanipsum velit. Nam nec tellus a   odio tincidunt auctor aornare odio. Sed non  mauris vitae    erat consequatauctor eu in elit.</div>
+                        <div class="testimonials__name">JANE GALADRIEL</div>
+                        <div class="testimonials__rank">CEO TENGKUPER</div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">lorem ipsum1</div>
+                        <div class="testimonials__name">Jade A</div>
+                        <div class="testimonials__rank">CEO</div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">lorem ipsum 3</div>
+                        <div class="testimonials__name">SAM JONES</div>
+                        <div class="testimonials__rank">some</div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">lorem ipsum 2</div>
+                        <div class="testimonials__name">Dick Adalin</div>
+                        <div class="testimonials__rank">developer</div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">lorem</div>
+                        <div class="testimonials__name">Lorain</div>
+                        <div class="testimonials__rank">Cleaner</div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">This is Photoshop's    version  of Lorem Ipsum. Proin gravida nibh vel velit  auctor aliquet. Aenean sollicitudin, lorem quisbibendum  auctor, nisi elit consequat ipsum, necsagittis sem nibh id  elit. Duis sed odio sit amet nibhvulputate cursus a sit     amet mauris. Morbi accumsanipsum velit. Nam nec tellus a   odio tincidunt auctor aornare odio. Sed non  mauris vitae    erat consequatauctor eu in elit.</div>
+                        <div class="testimonials__name">JANE GALADRIEL</div>
+                        <div class="testimonials__rank">CEO TENGKUPER</div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">lorem ipsum1</div>
+                        <div class="testimonials__name">Jade A</div>
+                        <div class="testimonials__rank">CEO</div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">lorem ipsum 3</div>
+                        <div class="testimonials__name">SAM JONES</div>
+                        <div class="testimonials__rank">some</div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">lorem ipsum 2</div>
+                        <div class="testimonials__name">Dick Adalin</div>
+                        <div class="testimonials__rank">developer</div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__comma">“</div>
+                        <div class="testimonials__text">lorem</div>
+                        <div class="testimonials__name">Lorain</div>
+                        <div class="testimonials__rank">Cleaner</div>
+                    </div>
+                </div>
+                
+                    
+                <div class="testimonials__inner">
+                    
+                    <div class="slide__items">
+                        <div class="testimonials__arrow__left"></div>
+                        <div class="testimonials__slider" id="testimonialsSlider">
+
+                            <div class="slick__item">
+                                <img class="testimonials__img" src="assets/images/Testimonials/1.jpg" alt="">
+                            </div>
+                            <div class="slick__item">
+                                <img class="testimonials__img" src="assets/images/Testimonials/2.jpg" alt="">                                
+                            </div>
+                            <div class="slick__item">
+                                <img class="testimonials__img" src="assets/images/Testimonials/3.jpg" alt="">
+                            </div>
+                            <div class="slick__item">
+                                <img class="testimonials__img" src="assets/images/Testimonials/4.jpg" alt="">
+                            </div>
+                            <div class="slick__item">
+                                <img class="testimonials__img " src="assets/images/Testimonials/5.jpg" alt="">
+                            </div>
+                            
+                            <div class="slick__item">
+                                <img class="testimonials__img" src="assets/images/Testimonials/1.jpg" alt="">
+                            </div>
+                            <div class="slick__item">
+                                <img class="testimonials__img" src="assets/images/Testimonials/2.jpg" alt="">                                
+                            </div>
+                            <div class="slick__item">
+                                <img class="testimonials__img" src="assets/images/Testimonials/3.jpg" alt="">
+                            </div>
+                            <div class="slick__item">
+                                <img class="testimonials__img" src="assets/images/Testimonials/4.jpg" alt="">
+                            </div>
+                            <div class="slick__item">
+                                <img class="testimonials__img " src="assets/images/Testimonials/5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="testimonials__arrow__right"></div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <form class="contact__form" method="POST">
+                    <div class="contact__form__title">GIVE US A GOOD NEWS</div>
+                    <input placeholder="Name" type="text" class="contact__name">
+                    <input placeholder="Email" type="text" class="contact__email">
+                    <input placeholder="Subject" type="text" class="contact__subject">
+                    <textarea placeholder="Your Message" type="text" class="contact__message"></textarea>
+                    <button href="#" class="btn btn--contact">SUBMIT</button>
+                </form>
+                <div class="contact__clients">
+                    <div class="contact__clients__title">OUR HAPPY CLIENTS</div>
+                    <div class="clients__inner">
+                        <img src="assets/images/Contact/1.png" class="contact__client">
+                        <img src="assets/images/Contact/2.png" class="contact__client">
+                        <img src="assets/images/Contact/3.png" class="contact__client">
+                        <img src="assets/images/Contact/4.png" class="contact__client">
+                        <img src="assets/images/Contact/5.png" class="contact__client">
+                        <img src="assets/images/Contact/6.png" class="contact__client">
+                        <img src="assets/images/Contact/7.png" class="contact__client">
+                        <img src="assets/images/Contact/8.png" class="contact__client">
+                        <img src="assets/images/Contact/9.png" class="contact__client">
+                        <img src="assets/images/Contact/10.png" class="contact__client">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <div class="footer__logo">
+                        <img src="assets/images/logo.png" alt="" class="footer__img">
+                        <div class="footer__logo__text">tajam</div>
+                    </div>
+                    <div class="footer__text">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</div>
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__nav__item">HELP</a>
+                        <a href="#" class="footer__nav__item">TERMS & CONDITION</a>
+                        <a href="#" class="footer__nav__item">PRIVACY</a>
+                    </nav>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__address__title">OUR STUDIO</div>
+                    <div class="footer__address">
+                        <img src="assets/images/footer/address.png" class="address__img">
+                        <div class="address__text">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                            11480 - Indonesia</div>
+                    </div>
+                    <div class="footer__number">
+                        <img src="assets/images/footer/phone.png" class="number__img">
+                        <div class="number__text">(+62) 21-2224 3333</div>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__contact__title">STAY IN TOUCH</div>
+                    <div class="footer__subscribe">
+                        <div class="subscribe__text">Subscribe our newsletter</div>
+                        <button class="subscribe__button">
+                            <img src="assets/images/footer/paper.png" class="subscribe__img">
+                        </button>
+                    </div>
+                    <div class="footer__social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#dribble"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#google"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#youtube"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__copyright">Copyright © 2015 - Tajem Creative</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Scripts -->
+<script src="assets/app/app.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
