@@ -576,7 +576,8 @@ h1, h2, h3, h4, h5, h6 {
 .works__item {
     width: 16.6666%;
     height: 200px;
-    overflow: hidden;
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .works__load {
@@ -709,7 +710,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .slick__item {
     width: 45px;
-    margin-left: 0 50px;
 }
 
 .slick__item.slick-center .testimonials__img {
@@ -962,7 +962,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__number {
     display: flex;
-
 }
 
 .number__img {
@@ -1195,7 +1194,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .footer__number {
         width: 100%;
-        
+        justify-content: center;
     }
     .footer__contact__title {
         margin-bottom: 20px;
@@ -1241,6 +1240,9 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 20px;
     }
 
+    .intro__inner {
+        padding: 0;
+    }
     /* About */
 
     .about {
@@ -1374,6 +1376,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media (max-width: 414px) {
+
+
     /* Expertise */
 
     .item__block {
@@ -1411,5 +1415,9 @@ h1, h2, h3, h4, h5, h6 {
         padding-right: 30px;
         padding-left: 30px;
         margin-bottom: 30px;
+    }
+
+    .footer__block {
+        margin-bottom: 20px;
     }
 }

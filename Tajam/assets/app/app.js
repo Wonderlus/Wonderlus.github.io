@@ -53,16 +53,15 @@ $(function() {
     
     slider.slick({
         arrows: true,
-        
         prevArrow: ".testimonials__arrow__left",
         nextArrow: ".testimonials__arrow__right",
         slidesToShow: 5,
         slidesToScroll: 1,
-        initialSlide: 2,
         asNavFor: "#sliderText"
       });
 
     $("#sliderText").slick({
+        
         infinite: true,
         asNavFor: slider,
         arrows: false,
