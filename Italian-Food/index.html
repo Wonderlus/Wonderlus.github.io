@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Food</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</head>
+<body>
+    <!-- Sprite -->
+    <svg style="display: none">
+        <symbol id="instagram" viewBox="0 0 438.536 438.536" >
+            <g>
+                <path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
+                C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563
+                h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243
+                C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982
+                c24.36,0,45.153,8.33,62.381,24.982c17.228,16.655,25.837,36.785,25.837,60.386c0,23.598-8.609,43.729-25.837,60.379
+                c-17.228,16.659-38.014,24.988-62.381,24.988c-24.172,0-44.87-8.336-62.097-24.988c-17.228-16.652-25.841-36.781-25.841-60.379
+                C131.621,194.81,140.234,174.681,157.462,158.025z M388.865,370.589c0,4.945-1.718,9.083-5.141,12.416
+                c-3.433,3.33-7.519,4.996-12.282,4.996h-305.2c-4.948,0-9.091-1.666-12.419-4.996c-3.333-3.326-4.998-7.471-4.998-12.416V185.575
+                H89.08c-3.805,11.993-5.708,24.462-5.708,37.402c0,36.553,13.322,67.715,39.969,93.511c26.65,25.786,58.721,38.685,96.217,38.685
+                c24.744,0,47.583-5.903,68.527-17.703c20.937-11.807,37.486-27.839,49.676-48.112c12.183-20.272,18.274-42.4,18.274-66.38
+                c0-12.94-1.91-25.406-5.715-37.402h38.547v185.014H388.865z M388.865,115.626c0,5.52-1.903,10.184-5.716,13.99
+                c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522
+                c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854
+                c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none">
+        <symbol id="facebook" viewBox="0 0 512 512" >
+            <g>
+                <path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none">
+        <symbol id="twitter" viewBox="0 0 128 128" >
+            <g>
+                <path d="M128,23.294    c-4.703,2.142-9.767,3.59-15.079,4.237c5.424-3.328,9.587-8.606,11.548-14.892c-5.079,3.082-10.691,5.324-16.687,6.526    c-4.778-5.231-11.608-8.498-19.166-8.498c-14.493,0-26.251,12.057-26.251,26.927c0,2.111,0.225,4.16,0.676,6.133    C41.217,42.601,21.871,31.892,8.91,15.582c-2.261,3.991-3.554,8.621-3.554,13.552c0,9.338,4.636,17.581,11.683,22.412    c-4.297-0.131-8.355-1.356-11.901-3.359v0.331c0,13.051,9.053,23.937,21.074,26.403c-2.201,0.632-4.523,0.948-6.92,0.948    c-1.69,0-3.343-0.162-4.944-0.478c3.343,10.694,13.035,18.483,24.53,18.691c-8.986,7.227-20.315,11.533-32.614,11.533    c-2.119,0-4.215-0.123-6.266-0.37c11.623,7.627,25.432,12.088,40.255,12.088c48.309,0,74.717-41.026,74.717-76.612    c0-1.171-0.023-2.342-0.068-3.49C120.036,33.433,124.491,28.695,128,23.294"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <svg style="display: none">
+        <symbol id="whatsapp" viewBox="0 0 90 90" >
+            <g>
+                <path d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522
+                c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982
+                c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537
+                c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938
+                c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537
+                c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333
+                c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882
+                c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977
+                c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344
+                c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223
+                C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link" data-scroll="#intro">Home</a>
+                    <a href="#" class="nav__link" data-scroll="#menu">Menu</a>
+                    <a href="#" class="nav__link" data-scroll="#story">Our story</a>
+                    <a href="#" class="nav__link" data-scroll="#contact">Contact us</a>
+                </nav>
+                <button class="burger" type="button" id="burger">
+                    <div class="burger__item">Menu</div>
+                </button>
+                <div class="header__search">
+                    <form method="get" action="">
+                        <input class="search__input">
+                        <img src="assets/images/Search.png" class="search__img">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+    
+
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__logo">
+                    <img src="assets/images/intro/logo.png" alt="" class="logo__img">
+                </div>
+                <div class="intro__title">Italian Food</div>
+                <div class="intro__subtitle">LOREMIPSUM DOLOR</div>
+                <a href="#" class="btn btn-intro">Read More</a>
+                <div class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna.</div>
+                <img src="assets/images/intro/Intro-leaves.png" alt="" class="intro__leaves"> 
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <div class="container">
+            <div class="menu__title">Lorem Ipsum Dolor</div>
+            <div class="menu__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </div>
+            <div class="menu__items">
+                <div class="menu__item">
+                    <img src="assets/images/menu/menu1.jpg" alt="" class="menu__img">
+                    <div class="menu__name">Lorem ipsum</div>
+                    <div class="menu__text">Lorem ipsum dolor sit amet, 
+                        consectetur  adipisicing...
+                        </div>
+                </div>
+                <div class="menu__item">
+                    <img src="assets/images/menu/menu2.jpg" alt="" class="menu__img">
+                    <div class="menu__name">Lorem ipsum</div>
+                    <div class="menu__text">Lorem ipsum dolor sit amet, 
+                        consectetur  adipisicing...
+                        </div>
+                </div>
+                <div class="menu__item">
+                    <img src="assets/images/menu/menu3.jpg" alt="" class="menu__img">
+                    <div class="menu__name">Lorem ipsum</div>
+                    <div class="menu__text">Lorem ipsum dolor sit amet, 
+                        consectetur  adipisicing...
+                        </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-menu">Show More</a>
+        </div>
+    </div>
+
+    <!-- Story -->
+    <div class="story" id="story">
+        <div class="container">
+            <div class="story__inner">
+                <div class="story__title">Lorem Ipsum Dolor</div>
+                <div class="story__items">
+        
+                    <div class="story__text">Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et doloremagna
+                        aliqua. Ut enim ad minim veniam, quis nostrudexercitation
+                        ullamco laboris nisi ut aliquip ex quia voluptassit aspernatur
+                    </div>
+                
+                
+                    <div class="story__text">Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et doloremagna
+                        aliqua. Ut enim ad minim veniam, quis nostrudexercitation
+                        ullamco laboris nisi ut aliquip ex quia voluptassit aspernatur
+                    </div>
+                    
+                </div>
+                <a href="#" class="btn btn-story">More Info</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Discount -->
+    <div class="discount">
+        <div class="container">
+            <div class="discount__item">
+                <img src="assets/images/discount/discount1.jpg" alt="" class="discount__img">
+                <div class="discount__main">
+                    <div class="discount__title">Discount up to 50% All Excursions</div>
+                    <div class="discount__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</div>
+                    <a href="#" class="btn btn-discount">Read More</a>
+                </div>
+            </div>
+            <div class="discount__item">
+                <div class="discount__main">
+                    <div class="discount__title">January's Promo: Buy 1 Get 1 Free!</div>
+                    <div class="discount__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</div>
+                    <a href="#" class="btn btn-discount">Read More</a>
+                </div>
+                <img src="assets/images/discount/discount2.jpg" alt="" class="discount__img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo -->
+    <div class="promo">
+        <img src="assets/images/promo/leaves-left.png" class="promo__leaves left">
+        <div class="container">
+            <div class="promo__inner">
+                <div class="promo__title">Lorem Ipsum Dolor Sit Amet</div>
+                <div class="promo__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</div>
+                <img src="assets/images/promo/pizza.png" alt="" class="promo__img">
+            </div>
+        </div>
+        <img src="assets/images/promo/leaves-right.png" class="promo__leaves right">
+    </div>
+
+
+    <!-- Reviews -->
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews__inner">
+                <div class="reviews__items">
+                    <div class="reviews__item">
+                        <div class="reviews__title">Lorem Ipsum</div>
+                        <div class="reviews__text">Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__title">Lorem Ipsum</div>
+                        <div class="reviews__text">Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__title">Lorem Ipsum</div>
+                        <div class="reviews__text">Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</div>
+                    </div>
+                </div>
+
+                <div class="reviews__one">
+                    <div class="reviews__one__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </div>
+                    <div class="reviews__one__subtitle">Lorem Ipsum</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <img src="assets/images/contact/leaves-left.png" alt="" class="contact__leaves left">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__title">Title Here</div>
+                <div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </div>
+                <form class="contact__form" action="">
+                    <input class="contact__input" type="text" placeholder="Your Email">
+                    <button class="contact__button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <img src="assets/images/contact/leaves-right.png" alt="" class="contact__leaves right">
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__left__item">
+                        <div class="footer__left__title">
+                            Title Here
+                        </div>
+                        <div class="footer__left__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. </div>
+                        <div class="footer__left__icons">
+                            <a href="#" class="footer__icon">
+                                <svg class="footer__icon__img">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__icon">
+                                <svg class="footer__icon__img">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__icon">
+                                <svg class="footer__icon__img">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__icon">
+                                <svg class="footer__icon__img">
+                                    <use xlink:href="#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__right__items">
+                        <div class="footer__right__item">
+                            <div class="footer__right__title">About</div>
+                            <div class="footer__right__text">
+                                <a href="#" class="footer__right__link">History</a>
+                                <a href="#" class="footer__right__link">Our Team</a>
+                                <a href="#" class="footer__right__link">Brand Guidelines</a>
+                                <a href="#" class="footer__right__link">Terms & Condition</a>
+                                <a href="#" class="footer__right__link">Privacy Policy</a>
+                            </div>
+                        </div>
+                        <div class="footer__right__item">
+                            <div class="footer__right__title">Services</div>
+                            <div class="footer__right__text">
+                                <a href="#" class="footer__right__link">How to Order</a>
+                                <a href="#" class="footer__right__link">Our Our Product</a>
+                                <a href="#" class="footer__right__link">Order Status</a>
+                                <a href="#" class="footer__right__link">Promo</a>
+                                <a href="#" class="footer__right__link">Payment Method</a>
+                            </div>
+                        </div>
+                        <div class="footer__right__item">
+                            <div class="footer__right__title">Other</div>
+                            <div class="footer__right__text">
+                                <a href="#" class="footer__right__link">Contact Us</a>
+                                <a href="#" class="footer__right__link">Help</a>
+                                <a href="#" class="footer__right__link">Privacy<a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
