@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/app.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/blog.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+
+    <!-- Sprite -->
+    <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="logo" viewBox="0 0 46 43">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 24.0481V42.8481H16.424V40.1881L0 24.0481Z" fill="#326CF9"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.691 42.852H45.1131V24.052L28.6951 40.193L28.691 42.852Z" fill="#326CF9"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.115 0.844002L22.605 22.971L0 0.75V19.87L22.605 42.091L45.111 19.968L45.115 0.844002Z" fill="#326CF9"/>
+            </g>
+        </symbol>
+    </svg>
+
+
+    <!-- Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="../index.html" class="header__logo">
+                    <svg class="logo__img">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                    <div class="logo__text">Marico</div>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link nav__link-cases">Use Cases</a>
+                    <a href="about.html" class="nav__link">About</a>
+                    <a href="pricing.html" class="nav__link">Pricing</a>
+                    <a href="blog.html" class="nav__link">Blog</a>
+                </nav>
+
+                <div class="nav__toggle" id="navToggle">
+                    <div class="burger"></div>
+                </div>
+                
+                <div class="header__enter">
+                    <a href="login.html" class="header__login">Login</a>
+                    <a href="signup.html" class="header__registration">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Blog -->
+    <div class="blog">
+        <div class="blog__title">Content Sources</div>
+        <div class="blog__subtitle">Connect these sources to your Marico homepage.</div>
+        <div class="blog__items">
+
+            <div class="blog__item">
+                <svg class="blog__img" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="#61BCFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.8595 18.886C38.0245 18.053 39.0279 17.0147 39.8205 15.822H39.8205C38.7377 16.2939 37.5926 16.6078 36.4205 16.754C37.6573 16.0212 38.5824 14.8602 39.0205 13.491C37.863 14.1771 36.5968 14.6603 35.2765 14.92C33.6223 13.1434 31.0488 12.5613 28.791 13.4531C26.5333 14.3448 25.0522 16.5285 25.0585 18.956C25.054 19.408 25.1 19.8591 25.1955 20.301C20.4451 20.0678 16.0189 17.822 13.0255 14.126C11.4451 16.8217 12.2406 20.282 14.8395 22.017C13.9051 21.9917 12.9904 21.7424 12.1725 21.29V21.355C12.1767 24.1644 14.1513 26.5857 16.9025 27.155C16.3974 27.2882 15.8768 27.3535 15.3545 27.3489C14.9797 27.3559 14.6052 27.3224 14.2375 27.249C15.0197 29.6497 17.2294 31.2973 19.7535 31.3619C17.6634 32.9964 15.0858 33.8833 12.4325 33.881C11.9606 33.8842 11.489 33.8574 11.0205 33.801C13.7203 35.5402 16.866 36.4602 20.0775 36.45C24.6757 36.4819 29.0833 34.6152 32.26 31.2906C35.4366 27.9659 37.1007 23.4779 36.8595 18.886Z" fill="white"/>
+                </svg>
+                <div class="blog__name">Twitter</div>
+                <div class="blog__text">Connect your Twitter feed to
+                    your Marico homepage.</div> 
+            </div>
+
+            <div class="blog__item">
+                <svg class="blog__img" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="#FC3C3A"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0504 24.2902L23.3503 20.1021C23.0922 19.9408 22.7667 19.9323 22.5004 20.0798C22.234 20.2273 22.0686 20.5077 22.0684 20.8121V29.1881C22.0688 29.4923 22.2341 29.7723 22.5001 29.9198C22.7661 30.0673 23.0912 30.059 23.3494 29.8982L30.0493 25.7101C30.2943 25.557 30.443 25.2885 30.443 24.9996C30.443 24.7108 30.2943 24.4423 30.0493 24.2891L30.0504 24.2902ZM23.7433 27.6771V22.3241L28.0264 25.0011L23.7433 27.6771Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.5245 14.1121H15.3125C13.0007 14.1148 11.1273 15.9882 11.1245 18.3V31.7001C11.1271 34.0117 13.0005 35.8852 15.3123 35.8881H35.5245C37.8364 35.8853 39.7098 34.0119 39.7125 31.7001V18.3C39.7098 15.9884 37.8365 14.1149 35.5247 14.1121H35.5245ZM38.0375 31.701C38.0348 33.0875 36.9109 34.2104 35.5245 34.212H15.3125C13.9253 34.2104 12.8011 33.0862 12.7995 31.699V18.2991C12.8011 16.912 13.9252 15.7878 15.3124 15.7861H35.5245C36.9117 15.7877 38.0359 16.9119 38.0375 18.2991V31.701Z" fill="white"/>
+                </svg>
+                <div class="blog__name">YouTube</div>
+                <div class="blog__text">Connect your YouTube feed
+                    to your Marico homepage.</div> 
+            </div>
+
+            <div class="blog__item">
+                <svg class="blog__img" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6595 19.473H18.1875L22.1985 30.811L24.4446 24.394L22.7025 19.473H21.1505V18.393H28.0245V19.473H26.4146L30.4255 30.811L31.8676 26.691C33.7585 21.412 30.3175 19.768 30.3175 18.591C30.3175 17.413 31.2725 16.458 32.4506 16.458C32.5145 16.458 32.5765 16.458 32.6365 16.467C30.2484 14.2131 26.988 13.127 23.7253 13.4984C20.4628 13.8698 17.5299 15.661 15.7095 18.394H19.6595V19.473Z" fill="#00769D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8413 24.5668C13.84 28.691 16.1174 32.4796 19.7614 34.4133L14.7323 20.1948C14.1427 21.577 13.8396 23.0643 13.8413 24.5669V24.5668Z" fill="#00769D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.6875 19.075C34.8429 20.0916 34.7977 21.1287 34.5546 22.1279H34.5985L34.4296 22.6099C34.3258 22.9673 34.203 23.3188 34.0615 23.663L30.2266 34.408C32.8795 32.9941 34.8494 30.569 35.6893 27.6824C36.5292 24.7958 36.1678 21.6924 34.6875 19.0759V19.075Z" fill="#00769D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5503 35.1719C23.7341 35.8765 26.0817 35.8932 28.2754 35.2199L25.0154 26.0039L21.5503 35.1719Z" fill="#00769D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.4071 15.146C29.2043 9.94318 20.7689 9.94318 15.5662 15.146C10.3633 20.3488 10.3633 28.7842 15.5662 33.987C20.7689 39.1898 29.2043 39.1898 34.4071 33.9869C39.61 28.7842 39.61 20.3488 34.4071 15.146ZM24.9872 36.946C19.9791 36.9468 15.4639 33.9305 13.547 29.3039C11.6301 24.6772 12.6892 19.3515 16.2305 15.8103C19.7716 12.2691 25.0974 11.21 29.7241 13.1268C34.3507 15.0436 37.3669 19.559 37.3661 24.567C37.3549 31.3984 31.8196 36.9341 24.9875 36.946H24.9872Z" fill="#00769D"/>
+                </svg>
+                    
+                <div class="blog__name">WordPress</div>
+                <div class="blog__text">Connect your WordPress feed to
+                    your Marico homepage.</div> 
+            </div>
+
+            <div class="blog__item">
+                <svg class="blog__img" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="#FF671B"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4196 29C25.2148 29 25.0189 28.9162 24.8776 28.768L19.6276 23.268C19.4203 23.051 19.3623 22.7312 19.4803 22.4552C19.5983 22.1792 19.8694 22.0001 20.1696 22H22.9196V16.25C22.9207 15.5601 23.4796 15.0011 24.1695 15H26.6696C27.3595 15.0011 27.9185 15.5601 27.9196 16.25V22H30.6696C30.9697 22.0001 31.2408 22.1792 31.3588 22.4552C31.4768 22.7312 31.4189 23.051 31.2115 23.268L25.9615 28.768C25.8202 28.9162 25.6243 29 25.4196 29Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6694 35H15.1694C14.2034 34.9989 13.4205 34.2161 13.4194 33.25V32.75C13.4205 31.7841 14.2033 31.0012 15.1693 31H35.6694C36.6355 31.0011 37.4183 31.7839 37.4194 32.75V33.25C37.4184 34.2159 36.6356 34.9988 35.6695 35H35.6694Z" fill="white"/>
+                </svg>                    
+                <div class="blog__name">Substack</div>
+                <div class="blog__text">Connect your Substack feed to
+                    your Marico homepage.</div> 
+            </div>
+
+            <div class="blog__item">
+                <svg class="blog__img" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="#14100D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.5045 18.233L37.4194 16.4V16H30.7855L26.0574 27.768L20.6784 16H13.7194V16.4L15.9594 19.094C16.1769 19.2934 16.288 19.5834 16.2595 19.877V30.46C16.3265 30.8416 16.2064 31.2321 15.9365 31.51L13.4194 34.564V34.964H20.5645V34.564L18.0444 31.51C17.771 31.2335 17.6426 30.845 17.6974 30.46V21.306L23.9694 34.965H24.6984L30.0914 21.306V32.187C30.0914 32.474 30.0914 32.533 29.9034 32.721L27.9634 34.6V35H37.3754V34.6L35.5054 32.769C35.3404 32.6446 35.258 32.439 35.2914 32.235V18.767C35.2573 18.5632 35.3394 18.3574 35.5045 18.233Z" fill="white"/>
+                </svg>                    
+                <div class="blog__name">Medium</div>
+                <div class="blog__text">Connect your Medium feed to
+                    your Marico homepage.</div> 
+            </div>
+
+            <div class="blog__item soon">
+                <svg class="blog__img" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6595 19.473H18.1875L22.1985 30.811L24.4446 24.394L22.7025 19.473H21.1505V18.393H28.0245V19.473H26.4146L30.4255 30.811L31.8676 26.691C33.7585 21.412 30.3175 19.768 30.3175 18.591C30.3175 17.413 31.2725 16.458 32.4506 16.458C32.5145 16.458 32.5765 16.458 32.6365 16.467C30.2484 14.2131 26.988 13.127 23.7253 13.4984C20.4628 13.8698 17.5299 15.661 15.7095 18.394H19.6595V19.473Z" fill="#00769D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8413 24.5668C13.84 28.691 16.1174 32.4796 19.7614 34.4133L14.7323 20.1948C14.1427 21.577 13.8396 23.0643 13.8413 24.5669V24.5668Z" fill="#00769D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.6875 19.075C34.8429 20.0916 34.7976 21.1287 34.5546 22.1279H34.5985L34.4296 22.6099C34.3259 22.9673 34.203 23.3188 34.0615 23.663L30.2266 34.408C32.8796 32.9941 34.8494 30.569 35.6892 27.6824C36.5292 24.7958 36.168 21.6924 34.6875 19.0759V19.075Z" fill="#00769D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5503 35.1719C23.7341 35.8765 26.0817 35.8932 28.2754 35.2199L25.0154 26.0039L21.5503 35.1719Z" fill="#00769D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.4072 15.146C29.2045 9.94318 20.769 9.94318 15.5663 15.146C10.3634 20.3488 10.3634 28.7842 15.5663 33.987C20.769 39.1898 29.2045 39.1898 34.4072 33.9869C39.6101 28.7842 39.6101 20.3488 34.4072 15.146ZM24.9873 36.946C19.9792 36.9468 15.464 33.9305 13.5471 29.3039C11.6302 24.6772 12.6893 19.3515 16.2306 15.8103C19.7717 12.2691 25.0975 11.21 29.7242 13.1268C34.3508 15.0436 37.3671 19.559 37.3662 24.567C37.355 31.3984 31.8197 36.9341 24.9877 36.946H24.9873Z" fill="#00769D"/>
+                </svg>                    
+                <div class="blog__name">RSS Feeds</div>
+                <div class="blog__text">Connect your RSS Feeds feed to
+                    your Marico homepage.</div> 
+            </div>
+
+            <div class="blog__item">
+                <svg class="blog__img" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="#1BBA54"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.7404 28.5879C29.3404 25.0289 22.5454 24.1649 14.5534 26.0269C13.8951 26.1978 13.493 26.8623 13.6471 27.5248C13.8012 28.1873 14.4553 28.6061 15.1214 28.4689C27.9794 25.4799 32.7524 30.8899 34.0494 30.8899C34.6024 30.8881 35.0891 30.5247 35.2481 29.995C35.4071 29.4653 35.201 28.894 34.7404 28.5879Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9862 22.199C21.1762 20.499 29.3382 21.4869 35.2862 24.777C35.8918 25.1119 36.6542 24.8927 36.9894 24.2872C37.3245 23.6819 37.1055 22.9193 36.5002 22.584C30.0262 19.0031 21.1802 17.923 13.4122 19.76C12.7387 19.9193 12.3219 20.5945 12.4812 21.2679C12.6405 21.9415 13.3157 22.3583 13.9892 22.199H13.9862Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0374 15.6759C20.6104 13.359 31.2374 14.63 37.2244 18.568C37.8011 18.9095 38.5444 18.7372 38.912 18.1768C39.2796 17.6162 39.1414 16.8658 38.5984 16.4729C31.9454 12.0979 20.6414 10.726 12.2984 13.2729C11.6356 13.4756 11.2627 14.1772 11.4654 14.84C11.6681 15.5027 12.3696 15.8756 13.0324 15.673L13.0374 15.6759Z" fill="white"/>
+                    <circle cx="23.2744" cy="35" r="4" fill="white"/>
+                </svg> 
+                <div class="blog__name">Spotify</div>
+                <div class="blog__text">Connect your Spotify feed to
+                    your Marico homepage.</div> 
+            </div>
+
+            <div class="blog__item">
+                <svg class="blog__img" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="#8940FC"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9564 28.231L35.5864 25.387C35.4937 25.283 35.3608 25.2234 35.2214 25.2234C35.082 25.2234 34.9492 25.283 34.8564 25.387L32.4865 28.231C32.3689 28.3724 32.3438 28.5691 32.4219 28.7356C32.5001 28.902 32.6675 29.0082 32.8514 29.0081H33.6054C32.7684 31.9882 30.2339 34.1815 27.1644 34.582V22.373H31.4304C31.6922 22.373 31.9044 22.1608 31.9044 21.899V20C31.9044 19.7382 31.6922 19.526 31.4304 19.526H27.1644V18.307C28.847 17.6263 29.8113 15.849 29.4646 14.0674C29.1179 12.2858 27.5574 10.9998 25.7424 10.9998C23.9274 10.9998 22.3669 12.2858 22.0203 14.0674C21.6736 15.849 22.6379 17.6263 24.3204 18.307V19.53H20.0554C19.7952 19.53 19.5836 19.7397 19.5814 20V21.9C19.5814 22.1617 19.7936 22.374 20.0554 22.374H24.3214V34.583C21.252 34.1825 18.7175 31.9891 17.8804 29.009H18.6354C18.8193 29.0092 18.9868 28.903 19.0649 28.7366C19.1431 28.5701 19.118 28.3734 19.0004 28.2321L16.6304 25.3879C16.5377 25.2839 16.4048 25.2244 16.2654 25.2244C16.126 25.2244 15.9932 25.2839 15.9005 25.3879L13.5294 28.231C13.4119 28.3724 13.3867 28.5691 13.4649 28.7356C13.5431 28.902 13.7105 29.0082 13.8944 29.0081H14.9514C15.8419 33.5978 19.6641 37.0432 24.3214 37.454V38.0131C24.3225 38.1384 24.3715 38.2585 24.4584 38.349L25.4064 39.297C25.5934 39.4801 25.8925 39.4801 26.0794 39.297L27.0274 38.349C27.1145 38.2587 27.1635 38.1384 27.1644 38.0131V37.454C31.8217 37.0432 35.644 33.5978 36.5344 29.0081H37.5914C37.7753 29.0082 37.9427 28.902 38.0209 28.7356C38.0991 28.5691 38.074 28.3724 37.9564 28.231ZM25.7424 16.212C25.1673 16.212 24.6487 15.8656 24.4286 15.3342C24.2086 14.8029 24.3302 14.1912 24.7369 13.7845C25.1436 13.3778 25.7552 13.2561 26.2866 13.4762C26.818 13.6963 27.1644 14.2148 27.1644 14.79C27.1644 15.5753 26.5278 16.212 25.7424 16.212Z" fill="white"/>
+                </svg>
+                <div class="blog__name">Anchor</div>
+                <div class="blog__text">Connect your Anchor feed to
+                    your Marico homepage.</div> 
+            </div>
+            
+            <div class="blog__item">
+                <svg class="blog__img" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="#8940FC"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.2096 24.4761C39.2146 18.0466 34.8086 12.4537 28.5571 10.9536C22.3055 9.45337 15.8412 12.4376 12.9281 18.1687C10.0149 23.8998 11.4137 30.881 16.3099 35.0474L14.1267 39.781L25.3147 38.3811L36.5027 39.781L34.3186 35.0491C37.4261 32.4167 39.2156 28.5486 39.2097 24.4761H39.2096ZM24.1566 36.1901L17.9757 36.962L21.0667 30.2621H24.1566V36.1901ZM24.1566 27.9491H22.1356L24.0957 23.702C24.8873 23.9614 25.741 23.9614 26.5326 23.702L28.4927 27.9491H24.1566V27.9491ZM23.5776 19.844C23.5792 19.0309 24.1447 18.3276 24.9386 18.1515C25.7324 17.9755 26.5422 18.3737 26.8873 19.11C27.2325 19.8462 27.0208 20.7234 26.3776 21.2211C25.7455 21.6824 24.8878 21.6823 24.2556 21.2211C23.8284 20.892 23.5779 20.3833 23.5776 19.844V19.844ZM26.4727 36.1901V30.265H29.5616L32.6527 36.9651L26.4727 36.1901ZM33.3047 32.847L31.1046 28.0811V27.9501H31.0447L28.4746 22.3811C29.8051 20.7246 29.6305 18.322 28.0748 16.8752C26.5192 15.4283 24.1102 15.4283 22.5544 16.8752C20.9988 18.322 20.8243 20.7246 22.1547 22.3811L19.5857 27.948H19.5256V28.0811L17.3257 32.847C13.899 29.5809 12.8057 24.5579 14.5647 20.163C16.3237 15.7681 20.5808 12.8866 25.3147 12.8866C30.0485 12.8866 34.3055 15.7682 36.0646 20.163C37.8236 24.5579 36.7302 29.5809 33.3036 32.847H33.3047Z" fill="white"/>
+                </svg>   
+                <div class="blog__name">Apple Podcasts</div>
+                <div class="blog__text">Connect your Apple Podcasts feed to
+                    your Marico homepage.</div> 
+            </div>
+
+            <div class="blog__item soon">
+                <svg class="blog__img" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.9194" cy="25.5" r="25.5" fill="#EF72AD"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.1955 0C25.0713 0 23.9483 0.0727539 22.8335 0.218018C35.6608 1.90466 45.2509 12.8383 45.2509 25.776C45.2509 38.7137 35.6608 49.6473 22.8335 51.334C32.3631 52.587 41.7983 48.4341 47.3106 40.5603C52.8229 32.6864 53.4966 22.3997 49.0584 13.8741C44.6201 5.34863 35.8071 0.000488281 26.1955 0Z" fill="#EE539E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.0976 12.0959H18.2896C15.103 12.1014 12.5211 14.6832 12.5156 17.8699V33.6749C12.5197 36.8644 15.1042 39.4484 18.2931 39.4519H34.0976C37.2866 39.448 39.8708 36.8639 39.8746 33.6749V17.8699C39.869 14.6819 37.2852 12.0996 34.0974 12.0959H34.0976ZM38.4836 33.6779C38.4809 36.0991 36.5188 38.0612 34.0976 38.0638H18.2896C15.8685 38.0612 13.9064 36.0991 13.9036 33.6779V17.8699C13.908 15.45 15.8695 13.4897 18.2895 13.4869H34.0946C36.5158 13.4896 38.4779 15.4517 38.4807 17.8729V33.6779H38.4836Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.1958 18.5879C22.226 18.5879 19.0078 21.806 19.0078 25.7759C19.0078 29.7457 22.226 32.9639 26.1958 32.9639C30.1656 32.9639 33.3838 29.7457 33.3838 25.7759C33.3771 21.8086 30.1627 18.5944 26.1956 18.5879H26.1958ZM26.1958 31.5719C22.9926 31.5719 20.3958 28.9751 20.3958 25.7719C20.3958 22.5686 22.9926 19.9719 26.1958 19.9719C29.399 19.9719 31.9958 22.5686 31.9958 25.7719C31.9958 28.9751 29.399 31.5719 26.1958 31.5719Z" fill="white"/>
+                    <circle cx="33.6148" cy="17.429" r="1.855" fill="white"/>
+                </svg>  
+                <div class="blog__name">Instagram</div>
+                <div class="blog__text">Connect your Instagram feed to
+                    your Marico homepage.</div> 
+            </div>
+            
+            <div class="blog__item soon">
+                <svg class="blog__img" width="48" height="47" viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="23.9194" cy="23.5" r="23.5" fill="#007AB9"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9603 25.391V35.0801H32.3433V26.04C32.3433 23.77 31.5323 22.22 29.4983 22.22C28.2011 22.2274 27.0483 23.0485 26.6173 24.272C26.4731 24.7134 26.4102 25.1772 26.4313 25.641V35.077H20.8133C20.8133 35.077 20.8883 19.7681 20.8133 18.183H26.4313V20.577C26.4203 20.5961 26.4043 20.614 26.3943 20.6321H26.4313V20.577C27.4672 18.7783 29.4164 17.7039 31.4903 17.788C35.1903 17.788 37.9563 20.203 37.9563 25.3881L37.9603 25.391ZM14.9373 10.041C13.8447 9.94739 12.7913 10.4723 12.2082 11.4011C11.6251 12.33 11.6102 13.5068 12.1696 14.4502C12.7289 15.3934 13.7686 15.9449 14.8633 15.879H14.8993C15.9962 15.9719 17.0524 15.4418 17.6334 14.5068C18.2144 13.5719 18.2219 12.39 17.6528 11.4478C17.0837 10.5055 16.0342 9.96204 14.9363 10.041H14.9373ZM12.0903 35.079H17.7053V18.1851H12.0903V35.079Z" fill="#F1F2F2"/>
+                </svg>       
+                <div class="blog__name">Linkedin</div>
+                <div class="blog__text">Connect your Linkedin feed to
+                    your Marico homepage.</div> 
+            </div>
+
+            <div class="blog__item soon">
+                <svg class="blog__img" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.4194" cy="25" r="25" fill="#2D63EF"/>
+                    <path d="M21.9775 38V25.1641H19.6011V21.6221H21.9775V20.3203C21.9775 18.4535 22.5275 17.0054 23.6274 15.9761C24.7274 14.9468 26.2713 14.4321 28.2593 14.4321C28.9858 14.4321 29.783 14.5381 30.6509 14.75L30.666 18.5039C30.3532 18.4131 29.9344 18.3677 29.4097 18.3677C27.8657 18.3677 27.0938 19.0337 27.0938 20.3657V21.6221H30.2876V25.1641H27.0938V38H21.9775Z" fill="white"/>
+                </svg>    
+                <div class="blog__name">Facebook</div>
+                <div class="blog__text">Connect your Facebook feed to
+                    your Marico homepage.</div> 
+            </div>
+        </div>
+    </div> <!-- /.blog -->
+
+    
+    <!-- Results -->
+    <div class="results">
+        <div class="results__title">We've helped over 1,000 creators<br> reclaim control of their audience.</div>
+    </div>
+
+
+    <!-- Join -->
+    <div class="join">
+        <svg class="join__logo">
+            <use xlink:href="#logo"></use>
+        </svg>
+        <div class="join__title">Get Started Now</div>
+        <div class="join__subtitle">Setup is easy and takes under 5 minutes.
+        </div>
+        <button class="button button-join">Get Started Now</button>
+        <div class="join__results">
+            <div class="join__dot">
+                <div class="join__dot-big"></div>
+                <div class="join__dot-small"></div>
+            </div>
+            <div class="join__number">1000+</div>
+            <div class="join__subtext">creators have already started</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <a href="index.html" class="footer__info-main">
+                        <svg class="footer__logo">
+                            <use xlink:href="#logo"></use>
+                        </svg>
+                        <div class="footer__title">Marico</div>
+                    </a>
+                    <div class="footer__email">info@marico.co</div>
+                </div>
+                <nav>
+                    <a href="about.html" class="nav__link">About</a>
+                    <a href="pricing.html" class="nav__link">Pricing</a>
+                    <a href="blog.html" class="nav__link">Blog</a>
+                    <a href="login.html" class="nav__link">Sign in</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

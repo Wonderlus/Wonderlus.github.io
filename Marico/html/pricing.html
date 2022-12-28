@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/app.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/pricing.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+</head>
+<body>
+
+    <!-- Sprite -->
+    <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="logo" viewBox="0 0 46 43">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 24.0481V42.8481H16.424V40.1881L0 24.0481Z" fill="#326CF9"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.691 42.852H45.1131V24.052L28.6951 40.193L28.691 42.852Z" fill="#326CF9"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.115 0.844002L22.605 22.971L0 0.75V19.87L22.605 42.091L45.111 19.968L45.115 0.844002Z" fill="#326CF9"/>
+            </g>
+        </symbol>
+    </svg>
+    
+    <!-- Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="../index.html" class="header__logo">
+                    <svg class="logo__img">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                    <div class="logo__text">Marico</div>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link nav__link-cases">Use Cases</a>
+                    <a href="about.html" class="nav__link">About</a>
+                    <a href="pricing.html" class="nav__link">Pricing</a>
+                    <a href="blog.html" class="nav__link">Blog</a>
+                </nav>
+
+                <div class="nav__toggle" id="navToggle">
+                    <div class="burger"></div>
+                </div>
+                
+                <div class="header__enter">
+                    <a href="login.html" class="header__login">Login</a>
+                    <a href="signup.html" class="header__registration">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="pricing">
+        <div class="pricing__title">
+            Choose the plan that's right for you.
+        </div>
+        <div class="pricing__vars">
+
+
+            <div class="pricing__var">
+                <div class="var__title">Starter</div>
+                <div class="var__subtitle">Perfect for trying out Wavium</div>
+                <div class="var__price">Free</div>
+                <div class="var__describe">Collect Unlimited subscribers</div>
+                <div class="var__quantity">500 monthly emails</div>
+                <div class="var__addition">Upgrade to send more emails</div>
+                <div class="var__features">
+                    <div class="var__features--title">Key features</div>
+                    <div class="var__advantage">Automatic updating home page</div>
+                    <div class="var__advantage">Unlimited sources + posts</div>
+                </div>
+                <button class="button button-price">Start For Free</button>
+            </div>
+
+
+            <div class="pricing__var">
+                <div class="var__title">Basic</div>
+                <div class="var__subtitle">Build your online home</div>
+                <div class="var__price">$14
+                    <span>Per month</span>
+                    <br>
+                    <span>or $19/mo, billed monthly</span>
+                </div>
+                <div class="var__describe">Collect Unlimited subscribers</div>
+                <div class="var__quantity">2,000 free monthly emails</div>
+                <div class="var__addition">Purchase more for $0.002 per email</div>
+                <div class="var__features">
+                    <div class="var__features--title">Everything in starter, plus</div>
+                    <div class="var__advantage">Remove Wavium branding</div>
+                    <div class="var__advantage">Embed Wavium on your own <br>
+                    domain
+                    </div>
+                </div>
+                <button class="button button-price">Start Free 14-day Trial</button>
+            </div>
+
+
+            <div class="pricing__var">
+                <div class="var__title">Complete</div>
+                <div class="var__subtitle">Enhanced engagement</div>
+                <div class="var__price">$29
+                    <span>Per month</span>
+                    <br>
+                    <span>or $34/mo, billed monthly</span>
+                </div>
+                <div class="var__describe">Collect Unlimited subscribers</div>
+                <div class="var__quantity">10,000 free monthly emails</div>
+                <div class="var__addition">Purchase more for $0.002 per email</div>
+                <div class="var__features">
+                    <div class="var__features--title">Everything in basic, plus </div>
+                    <div class="var__advantage">Collect text massage subscribers</div>
+                    <div class="var__advantage">Share posts over text massage
+                    </div>
+                </div>
+                <button class="button button-price">Start Free 14-day Trial</button>
+            </div>
+
+
+        </div> <!-- /.pricing__vars -->
+
+        <!-- Join -->
+        <div class="join">
+            <svg class="join__logo">
+                <use xlink:href="#logo"></use>
+            </svg>
+            <div class="join__title">Get Started Now</div>
+            <div class="join__subtitle">Setup is easy and takes under 5 minutes.
+            </div>
+            <button class="button button-join">Get Started Now</button>
+            <div class="join__results">
+                <div class="join__dot">
+                    <div class="join__dot-big"></div>
+                    <div class="join__dot-small"></div>
+                </div>
+                <div class="join__number">1000+</div>
+                <div class="join__subtext">creators have already started</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__info">
+                        <a href="../index.html" class="footer__info-main">
+                            <svg class="footer__logo">
+                                <use xlink:href="#logo"></use>
+                            </svg>
+                            <div class="footer__title">Marico</div>
+                        </a>
+                        
+                        <div class="footer__email">info@marico.co</div>
+                    </div>
+                    <nav>
+                        <a href="about.html" class="nav__link">About</a>
+                        <a href="pricing.html" class="nav__link">Pricing</a>
+                        <a href="blog.html" class="nav__link">Blog</a>
+                        <a href="login.html" class="nav__link">Sign in</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- /.pricing -->
+</body>
+</html>

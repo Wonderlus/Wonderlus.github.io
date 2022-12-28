@@ -1,0 +1,139 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    padding-top: 200px;
+    margin-bottom: 150px;
+}
+
+.blog__title {
+    font-size: 120px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.blog__subtitle {
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    
+    margin: -10px 0 120px 0;
+}
+
+.blog__items {
+    gap: 20px;
+    max-width: 1255px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.33333% 33.33333% 33.33333%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    
+}
+
+.blog__item {
+    padding: 40px 40px 18px 25px;
+    border: 1px #707070 solid;
+    border-radius: 9px;
+
+    position: relative;
+}
+
+.blog__item.soon::after {
+    display: block;
+    content: "Coming Soon";
+    color: #4A7DE3;
+    
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    padding: 7px 15px 5px;
+    background: #102142;
+    border-radius: 9px;
+}
+
+.blog__name {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    margin-bottom: 5px;
+}
+
+.blog__text {
+    font-size: 22px;
+    color: #828282;
+}
+
+.blog__img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+@media (max-width: 1200px) {
+    /* Blog */
+    .blog {
+        padding: 150px 30px 0;
+    }
+
+    .blog__title {
+        font-size: 80px;
+    }
+
+    .blog__subtitle {
+        font-size: 25px;
+    }
+
+    .blog__items {
+        grid-template-columns: 50% 50%;
+    }
+
+    .blog__name {
+        font-size: 25px;
+    }
+
+    .blog__text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 717px) {
+    /* Blog */
+    .blog {
+        padding: 150px 30px 0;
+    }
+
+    .blog__title {
+        font-size: 50px;
+    }
+
+    .blog__subtitle {
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+    .blog__items {
+        grid-template-columns: 100%;
+    }
+
+    .blog__img {
+        width: 40px;
+        height: 40px;
+    }
+    .blog__name {
+        font-size: 20px;
+    }
+
+    .blog__text {
+        font-size: 16px;
+    }
+}

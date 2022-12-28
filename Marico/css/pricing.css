@@ -1,0 +1,266 @@
+.pricing {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    color: #fff;
+
+}
+
+.pricing__title {
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+.pricing__vars {
+    display: flex;
+    gap: 70px;
+    padding: 0 40px;
+    margin-bottom: 150px;
+}
+
+.pricing__var {
+    width: 33.33333%;
+    flex-direction: column;
+    background: #131313;
+    border: 1px #707070 solid;
+    border-radius: 30px;
+    padding: 30px 30px;
+
+    text-align: left;
+
+    line-height: 1.5; 
+
+    transition: all 0.15s linear;
+}
+
+.pricing__var:hover {
+    background: #3C82F4;
+}
+
+.pricing__var:hover .var__subtitle,
+.pricing__var:hover .var__addition {
+    color: #fff;
+}
+
+.var__title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.var__subtitle {
+    font-size: 28px;
+    color: #B4B1B1;
+    margin-bottom: 35px;
+}
+
+.var__price {
+    font-size: 69px;
+    font-weight: 700;
+    line-height: 0.8;
+    margin-bottom: 80px;
+    height: 150px;
+}
+
+.var__price span {
+    font-weight: 400;
+    font-size: 26px;
+    color: #B4B1B1;
+    
+}
+
+.var__price span:last-child {
+    text-decoration: underline;
+}
+.var__describe {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.var__quantity {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.var__addition {
+    font-size: 23px;
+    color: #B4B1B1;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.var__features {
+    margin-bottom: 50px;
+}
+
+.var__features--title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.var__advantage {
+    font-size: 24px;
+    margin: 8px 0 8px 12px;
+}
+
+.var__advantage::before {
+    content: "";
+    display: inline-block;
+
+    margin-right: 12px;
+
+    width: 8px;
+    height: 20px;
+
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    
+    transform: rotate(45deg);
+}
+
+
+.button-price {
+    border: 3.5px #4681E7 solid;
+    border-radius: 20px;
+    padding: 22px 0;
+    max-width: 100%;
+
+    color: #fff;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    transition: all 0.15s linear;
+}
+
+.button-price:hover {
+    background: #fff;
+    border-color:#fff;
+    color: #3C82F4;
+}
+
+
+@media (max-width: 1200px) {
+    /* Pricing */
+    .pricing__title {
+        font-size: 60px;
+        padding: 0 40px;
+    }
+
+    .pricing__vars {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .pricing__var {
+        width: 100%;
+    }
+
+    .var__title {
+        font-size: 40px;
+    }
+
+    .var__subtitle {
+        font-size: 20px;
+    }
+
+    .var__price {
+        font-size: 50px;
+        height: auto;
+    }
+
+    .var__price span {
+        font-size: 20px;
+    }
+
+    .var__describe {
+        font-size: 22px;
+    }
+
+    .var__quantity {
+        font-size: 22px;
+    }
+
+    .var__addition {
+        font-size: 20px;
+    }
+
+    .var__features--title {
+        font-size: 24px;
+    }
+
+    .var__advantage {
+        font-size: 20px;
+    }
+
+    .button-price {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 717px) {
+    /* Pricing */
+    .pricing {
+        padding-top: 125px;
+    }
+
+    .pricing__title {
+        font-size: 45px;
+        padding: 0 15px;
+        margin-bottom: 50px;
+    }
+
+    .pricing__vars {
+        padding: 0 15px;
+    }
+
+    .var__title {
+        font-size: 30px;
+    }
+
+    .var__subtitle {
+        font-size: 16px;
+    }
+
+    .var__price {
+        font-size: 40px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .var__price span {
+        font-size: 16px;
+    }
+
+    .var__describe {
+        font-size: 18px;
+    }
+
+    .var__quantity {
+        font-size: 18px;
+    }
+
+    .var__addition {
+        font-size: 18px;
+    }
+
+    .var__features--title {
+        font-size: 20px;
+    }
+
+    .var__advantage {
+        font-size: 18px;
+    }
+
+    .button-price {
+        font-size: 18px;
+    }
+
+}
