@@ -58,6 +58,8 @@ body {
     padding-top: 46px;  
 
     z-index: 1000;  
+
+    transition: background 0.15s linear;
 }
 
 .header.fixed {
@@ -74,7 +76,6 @@ body {
     justify-content: space-between;
     align-items: center;
      
-    z-index: 1500;
     
 }
 
@@ -1171,6 +1172,7 @@ body {
 
     .opportunities__img {
         max-width: 100%;
+        opacity: 0.5;
     }
 
     .opportunities__subtitle {
@@ -1183,6 +1185,9 @@ body {
         margin-bottom: 30px;
     }
 
+    .opportunities__pros {
+        align-items: center;
+    }
     .pros__item {
         font-size: 16px;
     }
@@ -1323,5 +1328,13 @@ body {
 
     .join__subtext {
         font-size: 14px;
+    }
+}
+
+
+@media (max-height: 450px) {
+    /* Header */
+    .header.fixed {
+        padding: 8px 0;
     }
 }

@@ -1,0 +1,18 @@
+{
+  "type": "module",
+
+  "dependencies": {
+    "aos": "^2.3.4",
+    "sass": "^1.57.1",
+    "swiper": "^9.0.0"
+  },
+  "name": "gericht",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map sass/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

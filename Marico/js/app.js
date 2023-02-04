@@ -1,7 +1,6 @@
 $(function() {
 
-    let header = $("#header");
-    let headerHeight = $("#header").innerHeight();
+    let headerHeight = $("#headerFixed").innerHeight() - 20;
     let scrollOffset = $(window).scrollTop();
 
     CheckScroll(headerHeight, scrollOffset);
