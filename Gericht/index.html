@@ -301,6 +301,31 @@
     </svg>
         
 
+    <!-- Modal -->
+    <dialog class="modal" id="modal">
+        <div class="modal-login">
+            <div class="login-title">
+                Login
+            </div>
+            <form action="" class="login-form">
+                <input placeholder="Email" type="email" class="login-email">
+                <input placeholder="Password" type="password"class="login-password">
+                <input value="Submit" type="submit" class="login-submit"> 
+            </form>
+        </div>
+
+        <div class="modal-registration">
+            <div class="registration-title">
+                Registration
+            </div>
+            <form action="" class="registration-form">
+                <input placeholder="Email" type="email" class="registration-email">
+                <input placeholder="Password" type="password"class="registration-password">
+                <input value="Submit" type="submit" class="registration-submit"> 
+            </form>
+        </div>
+    </dialog>
+
     <!-- Header -->
     <header class="header">
         <div class="header-logo">Gerícht</div>
@@ -320,7 +345,10 @@
             <a href="#" class="nav-item">Landing</a>
         </nav>
         <div class="header-entry">
-            <a href="#" class="header-sign">Log in / Registartion</a>
+            <div href="#" class="header-sign">
+                <div class="header-login">Log in</div> /
+                <div class="header-registration">Registration</div>
+            </div>
             <div class="header-decoration"></div>
             <a href="#" class="header-booking">Book Table</a>
         </div>

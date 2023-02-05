@@ -53,9 +53,45 @@ window.addEventListener("click", (event) => {
 
 
 let header = document.getElementsByTagName("header")[0];
-console.log(header)
 window.addEventListener("scroll", () => {
     header.style.background = "#0C0C0C";
     header.style.paddingTop = "15px";
     header.style.borderBottom = "1px solid rgba(220, 202, 135, 0.2)";
 })
+
+let entry = document.querySelectorAll(".header-sign div");
+
+let loginModal = document.querySelector(".modal-login");
+let registrationModal = document.querySelector(".modal-registration");
+let modal = document.querySelector("#modal");
+
+
+
+for (elem of entry) {
+    console.log(elem);
+    elem.addEventListener("click", (event) => {
+        if (event.target == entry[0]) {
+            loginModal.style.display = "flex";
+            registrationModal.style.display = "none";
+            modal.showModal();
+        } else {
+            registrationModal.style.display = "flex";
+            loginModal.style.display = "none";
+            modal.showModal();
+        }
+        
+    })
+}
+
+modal.addEventListener("click", (event) => {
+    if (!event.target.closest(".modal-login") && !event.target.closest(".modal-registration")) {
+
+        modal.setAttribute("closing", "");
+        modal.addEventListener("animationend", () => {
+            modal.removeAttribute("closing");
+        })
+        
+        modal.close();
+    }
+})
+
