@@ -49,6 +49,7 @@ window.addEventListener("click", (event) => {
             pages.removeAttribute("close");
         });
     }
+
 }) 
 
 
@@ -68,7 +69,7 @@ let modal = document.querySelector("#modal");
 
 
 for (elem of entry) {
-    console.log(elem);
+    
     elem.addEventListener("click", (event) => {
         if (event.target == entry[0]) {
             loginModal.style.display = "flex";
@@ -95,3 +96,37 @@ modal.addEventListener("click", (event) => {
     }
 })
 
+
+
+const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
+const burgerInner = document.getElementById("burger-inner");
+
+burger.addEventListener("click", (event) => {
+    
+    if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+        nav.classList.add("deactive");
+
+        nav.addEventListener("animationend", () => {
+            nav.classList.remove("deactive");
+        })
+
+    } else {
+        nav.classList.add("active");
+    }
+
+})
+
+
+window.addEventListener("click", (event) => {
+    console.log(event.target);
+    if (event.target != burgerInner && event.target != document.querySelector("#pages > span")) {
+        nav.classList.remove("active");
+        nav.classList.add("deactive");
+
+        nav.addEventListener("animationend", () => {
+            nav.classList.remove("deactive");
+        })
+    }
+})
