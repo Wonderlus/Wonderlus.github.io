@@ -4,6 +4,7 @@ body {
   margin: 0;
   background: #0C0B08;
   font-family: "Cormorant Upright", serif;
+  overflow-x: hidden;
 }
 
 *,
@@ -1572,12 +1573,13 @@ body {
     position: absolute;
     text-align: center;
     top: 100%;
-    right: 100px;
+    right: 77px;
+    background: rgb(12, 12, 12);
+    border: 1px solid rgba(220, 202, 135, 0.2);
+    padding: 20px;
     z-index: -1000;
     opacity: 0;
-    padding-left: 0;
     margin-top: 10px;
-    transform: translateX(-120%);
   }
   .header-nav.active {
     animation: fade-in 500ms forwards, slide-up 500ms forwards;
