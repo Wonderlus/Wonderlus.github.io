@@ -72,6 +72,7 @@ body {
 
 // Burger
 .burger {
+    display: none;
     cursor: pointer;
     padding: 13px 0;
 
@@ -140,7 +141,7 @@ body {
 .header-nav {
     display: flex;
     gap: 30px;
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
 .nav-item {
@@ -1598,6 +1599,14 @@ body {
         }
     }
 
+    .header-decoration {
+        width: 2px;
+    }
+    // Burger
+    .burger {
+        display: block;
+    }
+
     .intro-title {
         font-size: 75px;
     }
@@ -1630,6 +1639,15 @@ body {
         font-size: 50px;
     }
 
+    .special-img {
+        display: none;
+    }
+
+    .special-menu {
+        gap: 0;
+        justify-content: space-around;
+    }
+
     .special-drink {
         font-size: 37px;
     }
@@ -1642,5 +1660,99 @@ body {
         &::before {
             width: 80px;
         }
+    }
+
+    
+    // Chef
+    .chef  {
+        .container {
+            padding: 0 100px;
+        }
+        
+    }
+    .chef-inner {
+        flex-direction: column;
+    }
+
+    .chef-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .chef-info {
+        padding: 0;
+        text-align: center;
+    }
+
+    // Testimonials
+    .testimonials-title {
+        font-size: 50px;
+    }
+    // Awards
+    .awards {
+        position: relative;
+    }
+    .awards-inner {
+        display: block;
+    }
+
+    .awards-main {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .awards-img {
+        display: none;
+    }
+    .awards-laurels {
+        column-gap: 30px;
+        justify-content: space-around;
+    }
+    .awards-laurel {
+        width: auto;
+        max-width: none;
+    }
+
+    // Updates
+    .updates-title {
+        font-size: 50px;
+    }
+
+    .updates-item_link {
+        font-size: 26px;
+    }
+
+    // Gallery
+    .gallery-inner {
+        justify-content: space-around;
+        align-items: normal;
+    }
+    .gallery-photos {
+        align-items: flex-start;
+        flex-direction: column;
+        width: 30%;
+        gap: 0;
+    }
+
+    .gallery-img {
+        width: 100%;
+        transition: height 0.5s ease;  
+        img {
+            width: 100%;
+            height: 50px;
+            object-fit: cover;
+        
+            transition: height 0.5s ease;        
+        }
+
+        &:hover {
+            
+
+            img {
+                height: 300px;
+            }
+        }
+
     }
 }

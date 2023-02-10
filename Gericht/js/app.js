@@ -120,7 +120,6 @@ burger.addEventListener("click", (event) => {
 
 
 window.addEventListener("click", (event) => {
-    console.log(event.target);
     if (event.target != burgerInner 
         && event.target != document.querySelector("#pages > span")
         && event.target != burger
@@ -133,3 +132,11 @@ window.addEventListener("click", (event) => {
         })
     }
 })
+
+window.addEventListener("resize", () => {
+    console.log(window.innerWidth);
+})
+
+document.querySelector(".nav-item").classList.remove("hover");
+
+console.log(document.querySelector(".nav-item").classList)
