@@ -137,6 +137,25 @@ window.addEventListener("resize", () => {
     console.log(window.innerWidth);
 })
 
-document.querySelector(".nav-item").classList.remove("hover");
 
-console.log(document.querySelector(".nav-item").classList)
+let gallery = document.getElementsByClassName("gallery-img");
+
+function removeClassGallery(element) {
+    element.classList.remove("active");
+}
+
+for (let i = 0; i < gallery.length; i++) {
+    let element = gallery[i];
+    element.addEventListener("click", () => {
+        
+    
+        for (let j = 0; j < gallery.length; j++) {
+            gallery[j].classList.remove("active");
+        }
+        
+        element.classList.add("active");
+
+    })
+
+}
+
