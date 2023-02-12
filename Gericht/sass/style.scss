@@ -646,8 +646,8 @@ html {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    
-    &:last-child {
+    flex: 1;
+    &:last-of-type {
         align-items: flex-start;
         text-align: left;
     }
@@ -1587,6 +1587,7 @@ html {
         border: 1px solid rgba(220, 202, 135, 0.2);
         padding: 20px;
 
+        transform: translateY(-200%);
         z-index: -1000;
         
         opacity: 0;
@@ -1759,6 +1760,7 @@ html {
             transition: height 0.5s ease;        
         }
 
+        
         &:hover {
             
             &::after {
@@ -1803,5 +1805,157 @@ html {
 
 
 @media (max-width: 1000px) {
+    // Header
+    .header {
+        padding: 30px 50px 15px 50px;
+    }
+    .header-entry {
+        gap: 30px;
+    }
 
+    // Intro
+    .intro-hashtag {
+        display: none;
+    }
+
+    .intro-info {
+        padding-right: 80px;
+        padding-left: 20px;
+    }
+    .intro-img {
+        max-width: 350px;    
+        padding-right: 20px;   
+    }
+
+    .intro-suptitle {
+        font-size: 18px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+    .intro-title {
+        font-size: 50px;
+    }
+
+ 
+    // About
+    .about-title {
+        font-size: 40px;
+    }
+    .about-text {
+        font-size: 14px;
+    }
+
+    // Menu
+    .menu-inner {
+        padding: 150px 0 130px 0;
+    }
+
+    .menu-link {
+        font-size: 48px;
+    }
+
+    // Chef
+    .chef-suptitle {
+        font-size: 18px;
+    }
+
+    .chef-title {
+        font-size: 50px;
+    }
+    // Testimonials
+    .testimonials-emblem {
+        right: 50px;
+    }
+
+    .testimonials-suptitle {
+        font-size: 18px;
+    }
+
+    .testimonials-item {
+        width: 100%;
+    }
+
+    .customer-text {
+        font-size: 14px;
+    }
+    // Video
+    .video-emblem {
+        top: 50px;
+        left: 50px;
+    }
+
+    // Awards
+    .awards-subtitle {
+        font-size: 18px;
+    }
+
+    // Updates
+    .updates {
+        padding: 80px 0;
+        .emblem {
+            bottom: 50px;
+            right: 50px;
+        }
+    }
+
+    .updates-item_date {
+        font-size: 14px;
+    }
+
+    .updates-item_name {
+        font-size: 14px;
+    }
+
+    .updates-item_link {
+        font-size: 23px;
+    }
+    .updates-item_text {
+        font-size: 14px;
+    }
+
+    // Gallery
+    .gallery-subtitle {
+        font-size: 18px;
+    }
+
+    // Subscribe
+    .subscribe-suptitle {
+        font-size: 18px;
+    }
+
+    .subscribe-title {
+        font-size: 40px;
+    }
+
+    .subscribe-subtitle {
+        font-size: 14px;
+    }
+
+    .subscribe-form {
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 0;
+    }
+
+
+    // Footer
+    .footer-item:nth-of-type(2) {
+        .footer-title {
+            font-size: 40px;
+        }
+    }
+
+    .footer-subtitle {
+        font-size: 14px;
+    }
+    
+    .footer-title {
+        font-size: 26px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
 }

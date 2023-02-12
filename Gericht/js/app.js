@@ -120,9 +120,11 @@ burger.addEventListener("click", (event) => {
 
 
 window.addEventListener("click", (event) => {
+    console.log(event.target);
     if (event.target != burgerInner 
         && event.target != document.querySelector("#pages > span")
         && event.target != burger
+        && event.target != document.querySelector("nav")
         && nav.classList.contains("active")) {
         nav.classList.remove("active");
         nav.classList.add("deactive");
