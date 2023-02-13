@@ -135,6 +135,9 @@ window.addEventListener("click", (event) => {
     }
 })
 
+console.log(screen.width);
+console.log();
+
 window.addEventListener("resize", () => {
     console.log(window.innerWidth);
 })

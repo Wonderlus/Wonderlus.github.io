@@ -391,6 +391,10 @@ html {
   margin-bottom: 50px;
 }
 
+.intro-img_responsive {
+  display: none;
+}
+
 .intro-hashtag {
   margin-left: 15px;
   color: #fff;
@@ -590,6 +594,7 @@ html {
 .book {
   position: relative;
   padding: 150px 0;
+  text-align: center;
 }
 
 .book-emblem {
@@ -1400,6 +1405,7 @@ html {
 }
 
 .subscribe {
+  text-align: center;
   position: relative;
   padding-top: 150px;
 }
@@ -1641,13 +1647,13 @@ html {
     width: 80px;
   }
   .chef .container {
-    padding: 0 100px;
+    padding: 0 50px;
   }
   .chef-inner {
     flex-direction: column;
   }
   .chef-img {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
   }
   .chef-info {
@@ -1845,5 +1851,241 @@ html {
   }
   .footer-text {
     font-size: 14px;
+  }
+}
+@media (max-width: 717px) {
+  .header {
+    padding: 30px 10px 15px 10px;
+  }
+  .header-logo {
+    font-size: 30px;
+  }
+  .header-entry {
+    gap: 10px;
+  }
+  .header-sign {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-sign > span {
+    display: none;
+  }
+  .intro {
+    position: relative;
+  }
+  .intro-img_responsive {
+    display: block;
+    max-width: 350px;
+    position: absolute;
+    opacity: 0.4;
+    object-fit: cover;
+  }
+  .intro-img {
+    display: none;
+  }
+  .intro-info {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .about-img {
+    display: none;
+  }
+  .book-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-select {
+    width: 50%;
+  }
+  .book-form_item {
+    width: 50%;
+  }
+  .special-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .special-drink {
+    width: 100%;
+  }
+  .chef .container {
+    padding: 0 15px;
+  }
+  .testimonials-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    gap: 10px;
+  }
+  .customer-pic {
+    margin: 0;
+  }
+  .video {
+    padding: 150px 0;
+  }
+  .video-emblem {
+    max-width: 100px;
+    max-height: 100px;
+    top: 10px;
+    left: 10px;
+  }
+  .awards {
+    padding: 70px 0;
+  }
+  .updates-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .updates .emblem {
+    max-width: 100px;
+    max-height: 100px;
+    bottom: -30px;
+    right: 10px;
+  }
+  .gallery {
+    padding: 100px 0;
+  }
+  .gallery-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .gallery-main {
+    max-width: 100%;
+  }
+  .gallery-photos {
+    width: 60%;
+  }
+  .gallery-img img {
+    max-width: 100%;
+  }
+  .subscribe {
+    padding-top: 100px;
+  }
+  .subscribe-emblem {
+    left: 50px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer {
+    padding: 350px 0 30px 0;
+    margin-top: -300px;
+  }
+  .footer-item:nth-of-type(2) {
+    display: none;
+  }
+}
+@media (max-width: 414px) {
+  .header {
+    padding: 30px 15px 15px 15px;
+  }
+  .header-logo {
+    display: none;
+  }
+  .header-nav {
+    right: 10px;
+  }
+  .about {
+    padding: 50px 0;
+  }
+  .about-inner {
+    flex-direction: column;
+  }
+  .about-main {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .book-inner {
+    padding: 30px 15px;
+  }
+  .book-title {
+    font-size: 40px;
+    margin-bottom: 48px;
+  }
+  .book-select {
+    width: 80%;
+  }
+  .book-form_item {
+    width: 80%;
+  }
+  .menu .container svg {
+    max-height: 100px;
+    max-width: 100px;
+  }
+  .menu-inner {
+    padding: 100px 0;
+  }
+  .menu-link {
+    font-size: 40px;
+  }
+  .special {
+    padding: 80px 0;
+  }
+  .special-title {
+    font-size: 40px;
+  }
+  .chef {
+    padding: 60px 0;
+  }
+  .chef-title {
+    font-size: 35px;
+  }
+  .testimonials {
+    padding: 80px 0;
+  }
+  .testimonials-emblem {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .testimonials-title {
+    font-size: 40px;
+  }
+  .testimonials-customers {
+    row-gap: 50px;
+  }
+  .awards-title {
+    font-size: 40px;
+  }
+  .updates {
+    padding: 50px 0;
+  }
+  .updates-title {
+    font-size: 40px;
+  }
+  .gallery {
+    padding: 60px 0;
+  }
+  .gallery-title {
+    font-size: 40px;
+  }
+  .gallery-photos {
+    width: 80%;
+  }
+  .subscribe {
+    padding-top: 60px;
+  }
+  .subscribe-title {
+    font-size: 35px;
+  }
+  .subscribe-subtitle {
+    margin-bottom: 20px;
+  }
+  .subscribe-form {
+    padding: 0;
+  }
+  .subscribe-form_email {
+    padding: 16px;
+  }
+  .footer-items {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
   }
 }
