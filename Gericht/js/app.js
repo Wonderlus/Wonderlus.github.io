@@ -135,14 +135,9 @@ window.addEventListener("click", (event) => {
     }
 })
 
-console.log(screen.width);
-console.log();
-
-window.addEventListener("resize", () => {
-    console.log(window.innerWidth);
-})
 
 
+// Gallery
 let gallery = document.getElementsByClassName("gallery-img");
 
 function removeClassGallery(element) {

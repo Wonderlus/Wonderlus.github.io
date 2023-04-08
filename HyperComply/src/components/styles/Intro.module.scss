@@ -1,0 +1,49 @@
+.intro {
+    background: #273720;
+
+    display: flex;
+    
+    padding-top: 150px;
+    align-items: center;
+
+}
+
+.introInner {
+    display: grid;
+    grid-template-columns: auto auto;
+
+
+    column-gap: 30px;
+
+}
+
+.describe {
+    margin-left: 60px;
+}
+
+.title {
+    font-size: 74px;
+    font-weight: 400;
+    color: #fff
+}
+
+.text {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.img {
+    justify-self: flex-end;
+    border-radius: 10px;
+    max-width: 720px;
+    max-height: 405px;
+}
+
+.footerText {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+
+    margin-left: 60px;
+}

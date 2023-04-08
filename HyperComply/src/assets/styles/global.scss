@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    &::after {
+        box-sizing: border-box;
+    }
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+.button {
+    outline: 0;
+    border: 0;
+    background: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+
+    cursor: pointer;
+    transition: color .15s linear;
+    &:hover {
+        color: #42AE60;
+    }
+
+
+    &.big {
+        background: #42AE60;
+        padding: 16px 25px;
+        border-radius: 6px;
+
+        &:hover {
+            color:#273720;
+        }
+    }
+}
