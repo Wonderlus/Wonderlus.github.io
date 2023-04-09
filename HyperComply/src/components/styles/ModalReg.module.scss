@@ -1,0 +1,24 @@
+.modalInner {
+    position: fixed;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #fff;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+
+    border: 1px solid #42AE60;
+    border-radius: 3px;
+}
+
+.modalForm {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+

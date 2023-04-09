@@ -2,7 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Header from "./Header";
+
 const Router = () => {
+
+    
     return ( 
         <BrowserRouter>
             <Header />
