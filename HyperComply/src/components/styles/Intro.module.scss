@@ -47,3 +47,17 @@
 
     margin-left: 60px;
 }
+
+
+.companyImgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -50%;
+}
+
+.companyImg {
+    width: 104px;
+    height: 52px;
+}

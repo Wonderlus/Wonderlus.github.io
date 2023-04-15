@@ -1,0 +1,58 @@
+.stats {
+    text-align: center;
+    color: #273720;
+
+    padding: 128px 60px 0;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 6px;
+}
+
+.title {
+    margin: 0;
+    font-size: 71px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.text {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.statsMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 75px;
+}
+
+.statsOpportunities {
+    text-align: left;
+}
+
+
+.statsOpportunity {
+    font-size: 31px;
+    font-weight: 400;
+
+    padding: 24px;
+    border-top: 1px solid #273720;
+    border-bottom: 1px solid #273720;
+
+    &:first-of-type {
+        border-bottom: none;
+    }
+    &:last-of-type {
+        border-top: none;
+    }
+}

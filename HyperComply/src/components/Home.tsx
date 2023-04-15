@@ -1,4 +1,5 @@
 import Intro from "./Intro";
+import Stats from "./Stats";
 
 const Home = () => {
 
@@ -6,6 +7,7 @@ const Home = () => {
     return (
         <>
             <Intro />
+            <Stats />
         </>
         
      );

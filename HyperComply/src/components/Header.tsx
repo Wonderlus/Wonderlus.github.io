@@ -1,10 +1,8 @@
 import styles from "./styles/Header.module.scss";
-import "./styles/Modal.module.scss";
 import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { ModalContext, IModalContext } from "../context/ModalContext";
 import Modal from "./Modal";
-import { CSSTransition } from "react-transition-group";
 
 
 const Header = () => {
@@ -12,7 +10,6 @@ const Header = () => {
     const [modalWindow, setModalWindow] = useState("")
     const {modal, open, close} = useContext(ModalContext)
     
-
 
     return (
         <>
@@ -39,18 +36,11 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-                
+
+            <Modal modalWindow={modalWindow}/>
+                 
             
-            <CSSTransition addEndListener={(node: HTMLElement, done: () => void) => {
-                node.addEventListener("transitionend", done, false);
-            }}
-            in={modal}
-            timeout={500}
-            classNames="modal">
-                <div>
-                    {modal && <Modal modalWindow={modalWindow}/>}
-                </div>
-            </CSSTransition>
+                
         </>
         
      );

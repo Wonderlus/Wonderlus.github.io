@@ -1,0 +1,33 @@
+
+.modal {
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.modal-enter {
+    background: none;
+}
+
+.modal-enter-active {
+    background:  rgba(0, 0, 0, 0.6);
+    transition: background 0.2s linear;
+}
+
+.modal-enter-done {
+    background:  rgba(0, 0, 0, 0.6);
+}
+
+.modal-exit {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-exit-active {
+    background: none;
+    transition: background 0.2s linear;
+}
+

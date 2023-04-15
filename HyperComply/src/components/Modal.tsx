@@ -1,17 +1,21 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { ModalContext } from "../context/ModalContext";
-import styles from "./styles/Modal.module.scss";
+import "./styles/Modal.scss";
 import ModalLogin from "./ModalLogin";
 import ModalReg from "./ModalReg";
-
+import { CSSTransition, Transition } from "react-transition-group";
 const Modal = ({modalWindow} : {modalWindow: string}) => {
     
     const {modal, open, close} = useContext(ModalContext);
+
     return (
-        <>
-            <div className={styles.modal} onClick={close}></div>
-            {modalWindow == "login" ? <ModalLogin/> : <ModalReg/>}
-        </>
+        <CSSTransition in={modal} timeout={200} classNames="modal" unmountOnExit>
+            <>
+                <div className={`modal`} onClick={close}> 
+                </div> 
+                {modalWindow == "login" ? <ModalLogin/> : <ModalReg/>}
+            </>
+        </CSSTransition>
         
      );
 }
