@@ -1,0 +1,47 @@
+.main {
+    background: #fff;
+    padding: 44px 80px;
+
+    width: 860px;
+    height: 440px;
+
+    border-radius: 40px;
+
+    margin: 0 auto;
+    transition: background 0.3s linear;
+}
+
+.logo {
+    width: 128px;
+    height: 64px;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-size: 32px;
+    font-weight: 400;
+    color: #273720;
+}
+
+.personBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.person {
+    width: 64px;
+    height: 64px;
+
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #273720;
+}
+
+
+

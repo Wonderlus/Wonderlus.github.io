@@ -4,6 +4,8 @@ import "./styles/Modal.scss";
 import ModalLogin from "./ModalLogin";
 import ModalReg from "./ModalReg";
 import { CSSTransition, Transition } from "react-transition-group";
+
+
 const Modal = ({modalWindow} : {modalWindow: string}) => {
     
     const {modal, open, close} = useContext(ModalContext);
