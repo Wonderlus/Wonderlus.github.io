@@ -1,0 +1,61 @@
+@use "sass:math";
+
+.main {
+    display: flex;
+    padding: 130px 0;
+    justify-content: center;
+    position: relative;
+    
+    background: #273720;
+}
+
+.inner {
+    display: flex;
+    justify-content: start;
+
+    gap: 160px;
+}
+
+.logo {
+    width: 96px;
+    height: 57px;
+    
+}
+
+.column {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 31px;
+    font-weight: 400;
+    color: #FAF8F7;
+
+    margin: 0;
+}
+
+.text {
+    font-size: 17px;
+    font-weight: 400;
+    color: #FAF8F7;
+
+    margin: 0;
+
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+}
+
+.svg {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}

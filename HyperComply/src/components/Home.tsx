@@ -3,6 +3,7 @@ import Intro from "./Intro";
 import Reviews from "./Reviews";
 import Stats from "./Stats";
 import Efficiency from "./Efficiency";
+import Footer from "./Footer";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <Advantages />
             <Reviews />
             <Efficiency />
+            <Footer />
         </>
         
      );
