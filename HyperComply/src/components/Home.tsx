@@ -2,6 +2,8 @@ import Advantages from "./Advantages";
 import Intro from "./Intro";
 import Reviews from "./Reviews";
 import Stats from "./Stats";
+import Efficiency from "./Efficiency";
+
 
 const Home = () => {
 
@@ -12,6 +14,7 @@ const Home = () => {
             <Stats />
             <Advantages />
             <Reviews />
+            <Efficiency />
         </>
         
      );

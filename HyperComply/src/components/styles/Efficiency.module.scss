@@ -1,0 +1,22 @@
+.main {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 128px 0;
+    background: #273720;
+}
+
+.title {
+    font-size: 80px;
+    color: #fff;
+    text-align: center
+}
+
+.img {
+    position: absolute;
+    left: 0;
+    top: 10%;
+}

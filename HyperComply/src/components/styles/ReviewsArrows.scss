@@ -1,0 +1,32 @@
+.arrows {
+    justify-content: center;
+    display: flex;
+
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.arrow-left {
+    
+    border-top: 2px #fff solid;
+    border-left: 2px #fff solid;
+    
+    width: 20px;
+    height: 20px;
+
+    transform: rotate(-45deg);
+
+    cursor: pointer;
+}
+
+.arrow-right {
+    border-bottom: 2px #fff solid;
+    border-right: 2px #fff solid;
+    
+    width: 20px;
+    height: 20px;
+
+    transform: rotate(-45deg);
+ 
+    cursor: pointer;
+}

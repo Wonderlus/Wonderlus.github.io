@@ -1,7 +1,9 @@
 import { Navigation } from "swiper"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from "./styles/Reviews.module.scss";
+import "./styles/ReviewsArrows.scss"
 import TeamSlide from './TeamSlide';
+
 
 import 'swiper/css';
 import "swiper/css/navigation"
@@ -15,9 +17,15 @@ const Reviews = () => {
             
             <Swiper
             modules={[Navigation]}
+            initialSlide={1}
             slidesPerView={1}
-            spaceBetween={-300}
-            navigation={true}
+            spaceBetween={0}
+            navigation={{
+                
+                nextEl: ".arrow-right",
+                prevEl: ".arrow-left",
+            }}
+            loop={true}
             >
                 <SwiperSlide >
                     {({ isActive }) => (
@@ -36,7 +44,10 @@ const Reviews = () => {
                 </SwiperSlide>
             </Swiper>
             
-            
+            <div className="arrows">
+                <div className="arrow-left"></div>
+                <div className="arrow-right"></div>
+            </div>
         </div>
      );
 }
